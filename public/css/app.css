@@ -784,6 +784,9 @@ select {
 .w-full {
   width: 100%;
 }
+.w-28 {
+  width: 7rem;
+}
 .max-w-6xl {
   max-width: 72rem;
 }
