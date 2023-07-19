@@ -48,7 +48,7 @@ class Owner extends Authenticatable
         return $this->hasOne(Shop::class);
     }
 
-    public function shop()
+    public function image()
     {
         return $this->hasMany(Image::class);
     }
