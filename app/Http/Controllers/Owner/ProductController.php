@@ -68,7 +68,7 @@ class ProductController extends Controller
         ->get();
 
         return view('owner.products.create',
-            compact('shops','images','categories'));
+            compact('shops', 'images', 'categories'));
     }
 
     /**
