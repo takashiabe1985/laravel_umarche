@@ -105,7 +105,7 @@ class CartController extends Controller
         $session = $stripe->checkout->sessions->create([
             'line_items' => [$lineItems],
             'mode' => 'payment',
-            'success_url' => route('user.items.index'),
+            'success_url' => route('user.cart.success'),
             'cancel_url' => route('user.cart.index'),
         ]);
         
@@ -121,5 +121,12 @@ class CartController extends Controller
 
         return view('user.checkout',
         compact('session', 'publicKey'));
+    }
+
+    public function success()
+    {
+        Cart::where('user_id', Auth::id())->delete();
+
+        return redirect()->route('user.items.index');
     }
 }
