@@ -884,6 +884,11 @@ select {
     margin-right: auto;
 }
 
+.my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 .my-3 {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
@@ -902,11 +907,6 @@ select {
 .my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
-
-.my-2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 .-ml-px {
@@ -961,6 +961,10 @@ select {
     margin-left: 1rem;
 }
 
+.ml-auto {
+    margin-left: auto;
+}
+
 .mr-2 {
     margin-right: 0.5rem;
 }
@@ -995,10 +999,6 @@ select {
 
 .mt-8 {
     margin-top: 2rem;
-}
-
-.ml-auto {
-    margin-left: auto;
 }
 
 .block {
